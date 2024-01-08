@@ -1,0 +1,167 @@
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+.jumbotron {
+  /* background-color: #ff3f34; */
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  height: 500px;
+}
+
+.brand-icon {
+    font-size: 100px;
+    color:white;
+}
+
+.greet{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.heart{
+  color:white;
+  font-size:40px;
+}
+
+
+
+.container{
+  
+}
+
+/* Add this CSS to your styles.css or App.css file */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  background-color: #E1E6E1;
+  overflow-x: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidenav a {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #73A580;
+}
+
+.menu-button {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 2;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar.open {
+  background-color: black;
+}
+
+.sidenav.open {
+  width: 250px;
+}
+
+.navbar {
+  /* Add this style to your top navbar to adjust its position when the side navbar is open */
+  transition: 0.3s;
+}
+
+.navbar.open {
+  left: 250px;
+}
+/* Add these CSS styles for the logo */
+.logo-container {
+  text-align: center;
+  padding: 20px; /* Adjust the padding to your preference */
+}
+
+.logo {
+  width: auto; /* Adjust the width and height to your preference for the circular logo */
+  height: 150px;
+  /* border-radius: 50%; Create a circular shape */
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+  /* border: 2px solid #fff; Add a white border for contrast */
+}
+
+.logo-nav {
+  width: 90px; /* Adjust the width and height to your preference for the circular logo */
+  height: 56px;
+  /* border-radius: 50%; Create a circular shape */
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+  /* border: 2px solid #fff; Add a white border for contrast */
+}
+
+.sidenav {
+  /* Your existing styles for the side navbar */
+  /* ... */
+}
+/* Add this to your CSS file or style section */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; /* Set a maximum height, adjust as needed */
+  width: 80vw; /* Set a maximum width, adjust as needed */
+  position: relative; /* Set the position to relative */
+}
+
+.modal-header {
+  /* background: #a09d32; */
+  background: #a09d32;
+  color: #fff;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.modal-body {
+  padding: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
